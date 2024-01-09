@@ -27,8 +27,8 @@ const Overview = () => {
 					</SelectContent>
 				</Select>
 			</div>
-			<div className="flex flex-row justify-center items-center gap-4">
-				<Card className="bg-white rounded w-full border-none h-[140px] sm:h-full">
+			<div className="flex flex-col justify-center items-center gap-4 sm:flex-row">
+				<Card className="bg-white rounded w-full border-none sm:h-full">
 					<CardHeader>
 						<CardTitle className="text-md text-[#4D4D4D] font-light">
 							Online Orders
