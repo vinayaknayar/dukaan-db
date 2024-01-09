@@ -10,7 +10,7 @@ const SideMenu = () => {
 				<div className="flex flex-row justify-between items-center w-full">
 					<div className="flex flex-row gap-3">
 						<img
-							src="src/assets/svgs/nishyan-logo.png"
+							src="svgs/nishyan-logo.png"
 							alt="Nishyan Logo"
 							width={"40px"}
 							height={"40px"}
@@ -51,7 +51,7 @@ const SideMenu = () => {
 					className="bg-black/10 hover:bg-black/30"
 					size={"icon"}
 				>
-					<img src="/src/assets/svgs/wallet.svg" alt="wallet" />
+					<img src="svgs/wallet.svg" alt="wallet" />
 				</Button>
 				<div className="flex flex-col">
 					<p className="text-white text-xs">Available Credits</p>
