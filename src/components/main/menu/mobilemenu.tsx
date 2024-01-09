@@ -66,7 +66,7 @@ export function MobileMenu() {
 					</SheetDescription>
 				</SheetHeader>
 				<SheetFooter>
-					<div className="bg-[#353C53] absolute bottom-0 w-2/3 m-3 flex flex-row justify-center items-center gap-4 w-full px-1 py-2 rounded">
+					<div className="bg-[#353C53] absolute left-0 top-[calc(100vh-80px)] w-2/3 m-3 flex flex-row justify-center items-center gap-4 w-full px-1 py-2 rounded">
 						<Button
 							variant={"ghost"}
 							className="bg-black/10 hover:bg-black/30"
@@ -79,7 +79,6 @@ export function MobileMenu() {
 							<p className="text-white">{credits}</p>
 						</div>
 					</div>
-
 				</SheetFooter>
 			</SheetContent>
 		</Sheet>

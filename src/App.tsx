@@ -4,7 +4,7 @@ import Payment from "./components/main/payments/payment"
 function App() {
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row overflow-x-hidden">
       <div>
         <SideMenu />
       </div>
