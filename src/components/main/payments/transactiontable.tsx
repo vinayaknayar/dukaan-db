@@ -46,44 +46,46 @@ const TableOperations = () => {
 const TablePaginator = () => {
 	return (
 		<>
-			<Pagination className="mt-5 flex flex-wrap justify-center items-center collapse sm:visible">
-				<PaginationContent>
-					<PaginationItem>
-						<PaginationPrevious href="#" className="border" />
-					</PaginationItem>
-					<PaginationItem>
-						<PaginationLink href="#">1</PaginationLink>
-					</PaginationItem>
-					<PaginationItem>
-						<PaginationEllipsis />
-					</PaginationItem>
-					<PaginationItem>
-						<PaginationLink
-							href="#"
-							isActive
-							className="bg-[#146EB4] hover:bg-[#10558b] hover:text-white text-white"
-							size={"icon"}
-						>
-							10
-						</PaginationLink>
-					</PaginationItem>
-					{
-						[11, 12, 13, 14, 15, 16, 17, 18].map((item, index) => {
-							return (
-								<PaginationItem key={index}>
-									<PaginationLink href="#">{item}</PaginationLink>
-								</PaginationItem>
-							)
-						})
-					}
-					<PaginationItem>
-						<PaginationNext href="#" className="border" />
-					</PaginationItem>
-				</PaginationContent>
-			</Pagination>
+			<div className='hidden sm:block'>
+				<Pagination className="mt-5 flex flex-wrap justify-center items-center">
+					<PaginationContent>
+						<PaginationItem>
+							<PaginationPrevious href="#" className="border" />
+						</PaginationItem>
+						<PaginationItem>
+							<PaginationLink href="#">1</PaginationLink>
+						</PaginationItem>
+						<PaginationItem>
+							<PaginationEllipsis />
+						</PaginationItem>
+						<PaginationItem>
+							<PaginationLink
+								href="#"
+								isActive
+								className="bg-[#146EB4] hover:bg-[#10558b] hover:text-white text-white"
+								size={"icon"}
+							>
+								10
+							</PaginationLink>
+						</PaginationItem>
+						{
+							[11, 12, 13, 14, 15, 16, 17, 18].map((item, index) => {
+								return (
+									<PaginationItem key={index}>
+										<PaginationLink href="#">{item}</PaginationLink>
+									</PaginationItem>
+								)
+							})
+						}
+						<PaginationItem>
+							<PaginationNext href="#" className="border" />
+						</PaginationItem>
+					</PaginationContent>
+				</Pagination>
+			</div>
 
 			{/* Mobile Pagination */}
-			<Pagination className="mt-5 flex flex-wrap justify-center items-center sm:collapse">
+			<Pagination className="mt-5 flex flex-wrap justify-center items-center sm:hidden">
 				<PaginationContent>
 					<PaginationItem>
 						<PaginationPrevious href="#" className="border" />

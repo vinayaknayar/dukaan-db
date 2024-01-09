@@ -4,7 +4,7 @@ import Header from "@/components/main/payments/header"
 
 const Payment = () => {
 	return (
-		<div className="payment pb-6 bg-stone-100 w-screen md:w-full">
+		<div className="payment pb-6 bg-stone-100 w-screen md:w-full overflow-hidden">
 			<Header />
 			<Overview />
 			<TransactionTable />
