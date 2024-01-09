@@ -17,7 +17,7 @@ import {
 	PaginationPrevious,
 } from "@/components/ui/pagination";
 import { Button } from "@/components/ui/button"
-import DropDown from '@/assets/svgs/dropdown';
+import DropDown from '@/assets/dropdown';
 
 interface TransactionData {
 	ID: string;
@@ -29,15 +29,15 @@ interface TransactionData {
 const TableOperations = () => {
 	return (
 		<div className="my-3 mx-1 flex flex-row justify-between items-center"><div className="relative">
-			<img src="src/assets/svgs/searchicon.svg" alt="search" className="absolute top-3 left-3" />
+			<img src="svgs/searchicon.svg" alt="search" className="absolute top-3 left-3" />
 
 			<input type="text" className="text-[#808080] h-10 w-full border border-input bg-background pl-9 pr-3 ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-[14px] rounded-sm" placeholder="Search by Order ID..." /></div>
 			<div className="flex flex-row ml-2 gap-1 justify-center text-[#808080] sm:gap-3">
 				<Button variant={'outline'}>Sort &nbsp;
-					<img src="src/assets/svgs/sort.svg" alt="sort" width="20px" height="20px" />
+					<img src="svgs/sort.svg" alt="sort" width="20px" height="20px" />
 				</Button>
 				<Button variant={'outline'}>
-					<img src="src/assets/svgs/download.png" alt="download" width="20px" height="20px" />
+					<img src="svgs/download.png" alt="download" width="20px" height="20px" />
 				</Button>
 			</div>
 		</div>
@@ -119,7 +119,7 @@ const TransactionTable = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch("src/assets/data.json");
+				const response = await fetch("data.json");
 				const jsonData: TransactionData[] = await response.json();
 				setData(jsonData);
 			} catch (error) {
@@ -143,7 +143,7 @@ const TransactionTable = () => {
 						<TableHead className="text-center">Order Amount</TableHead>
 						<TableHead className="text-right">
 							Transaction fees
-							<img src="src/assets/svgs/info.svg" alt="info" className="inline-block ml-2" />
+							<img src="svgs/info.svg" alt="info" className="inline-block ml-2" />
 						</TableHead>
 					</TableRow>
 				</TableHeader>

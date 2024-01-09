@@ -25,6 +25,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "src/assets/svgs"],
+  "include": ["src", "public/svgs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

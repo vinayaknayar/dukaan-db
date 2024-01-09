@@ -1,4 +1,4 @@
-import DropDown from "@/assets/svgs/dropdown";
+import DropDown from "@/assets/dropdown";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HelpCircle } from "lucide-react";
@@ -19,7 +19,7 @@ const Header = () => {
 			/>
 			<div className="flex gap-2">
 				<Button variant="outline" size="icon">
-					<img src="src/assets/svgs/notification.svg" alt="notification" />
+					<img src="svgs/notification.svg" alt="notification" />
 				</Button>
 				<Button variant="outline" size="icon">
 					<DropDown height={20} width={20} />
