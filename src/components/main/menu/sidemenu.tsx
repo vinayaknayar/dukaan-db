@@ -45,7 +45,7 @@ const SideMenu = () => {
 					})}
 				</ul>
 			</div>
-			<div className="bg-[#353C53] flex flex-row justify-center items-center gap-4 w-full px-1 py-2 rounded">
+			<div className="bg-[#353C53] flex flex-row justify-center items-center gap-4 w-2/3 px-1 py-2 rounded">
 				<Button
 					variant={"ghost"}
 					className="bg-black/10 hover:bg-black/30"
